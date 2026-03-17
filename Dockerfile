@@ -1,7 +1,7 @@
 FROM n8nio/n8n:latest
 
 USER root
-RUN cd /usr/local/lib/node_modules/n8n && \
-    npm install exceljs
+RUN npm config set registry https://registry.npmjs.org/ && \
+    npm install -g exceljs
 
 USER node
