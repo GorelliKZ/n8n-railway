@@ -5,4 +5,3 @@ RUN cd /usr/local/lib/node_modules/n8n && \
     npm install exceljs
 
 USER node
-```
